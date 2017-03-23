@@ -3,16 +3,16 @@ class GoJira < Formula
   homepage "https://github.com/Netflix-Skunkworks/go-jira"
 
   # curl -L -o hoge https://github.com/Netflix-Skunkworks/go-jira/releases/download/0.0.19/jira-darwin-38 && chmod +x hoge && ./hoge -h
-  url "https://github.com/Netflix-Skunkworks/go-jira/releases/download/0.0.19/jira-darwin-386"
+  url "https://github.com/Netflix-Skunkworks/go-jira/releases/download/v0.1.12/jira-darwin-10.6-amd64"
 
   # shasum -a 256 thefile
-  sha256 "c7b6c9ff974c7120bb721579ca53fc6d9c7e8537f50f2d8c18b7c74deec58896"
+  sha256 "d42d5978a09a9927b39e52c412b4b1599d4284f63033d2648877f4ebc52d663c"
 
   # See https://github.com/Netflix-Skunkworks/go-jira/releases
-  version "0.0.19"
+  version "0.1.12"
 
   def install
-    bin.install "jira-darwin-386" => "jira"
+    bin.install "jira-darwin-10.6-amd64" => "jira"
   end
 
   def caveats; <<-EOS.undent
