@@ -3,7 +3,7 @@
 formula=go-jira
 
 run_tests() {
-  jira -h
+  jira version
 }
 
 set -ex
@@ -12,7 +12,7 @@ if run_tests; then
   brew uninstall $formula
 fi
 
-cp brew-$formula.rb /usr/local/Library/Formula/$formula.rb
+cp $formula.rb /usr/local/Library/Formula/$formula.rb
 
 cat /usr/local/Library/Formula/$formula.rb
 
